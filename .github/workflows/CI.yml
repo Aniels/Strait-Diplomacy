@@ -1,6 +1,10 @@
 name: Python django CI testing
 
-on: [push]
+on:
+  push:
+    branches:
+      - main
+      - dev
 
 jobs:
   build:
