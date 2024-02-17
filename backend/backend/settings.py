@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     "graphene_django",
     # apps
     "users",
+    "graphql_test"
 ]
 
 MIDDLEWARE = [
@@ -123,5 +124,5 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 AUTH_USER_MODEL = 'users.User'
 
 GRAPHENE = {
-    "SCHEMA": "backend.schema.schema",
+    "SCHEMA": "backend.users.schema",
 }
