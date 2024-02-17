@@ -13,11 +13,6 @@ jobs:
     # This job runs on the latest version of Ubuntu
     runs-on: ubuntu-latest
 
-    # This job will run with multiple versions of Python as defined in the matrix
-    strategy:
-      matrix:
-        python-version: [3.8, 3.11, 3.12]
-
     # This sets the default working directory for all steps in this job
     defaults:
       run:
@@ -29,10 +24,11 @@ jobs:
     - uses: actions/checkout@v2
 
     # This step sets up the Python version as per the matrix
-    - name: Set up Python ${{ matrix.python-version }}
-      uses: actions/setup-python@v2
-      with:
-        python-version: ${{ matrix.python-version }}
+    - name: Set up Python 3.10
+        uses: actions/setup-python@v3
+        with:
+          python-version: "3.10"
+          cache: "pip"
 
     # This step installs the dependencies of your Django application
     - name: Install dependencies
