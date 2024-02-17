@@ -14,7 +14,7 @@ class UserCreationTestCase(TestCase):
         self.assertTrue(user.check_password('testpassword'))
 
 # Define a test case for GraphQL queries and mutations
-class UserTestCase(TestCase):
+class UserGraphQLTestCase(TestCase):
     def setUp(self):
         # Set up a GraphQL client using the schema
         self.client = Client(user_schema)
