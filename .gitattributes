@@ -1,2 +1,12 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# ignore all the files end with the File extension names
+*.sqlite3
+*.pyc
+
+# Visual Studio profiler
+*.psess
+*.vsp
+*.vspx
+*.sap
