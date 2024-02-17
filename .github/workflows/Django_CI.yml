@@ -16,7 +16,7 @@ jobs:
     # This job will run with multiple versions of Python as defined in the matrix
     strategy:
       matrix:
-        python-version: [3.10, 3.11]
+        python-version: [3.8, 3.11, 3.12]
 
     # This sets the default working directory for all steps in this job
     defaults:
