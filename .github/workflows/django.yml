@@ -14,6 +14,11 @@ jobs:
       max-parallel: 4
       matrix:
         python-version: [3.8, 3.9, 3.10]
+        
+    # This sets the default working directory for all steps in this job
+    defaults:
+      run:
+        working-directory: ./backend  # Change this to your Django project directory
 
     steps:
     - uses: actions/checkout@v3
