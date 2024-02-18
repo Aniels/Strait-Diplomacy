@@ -1,5 +1,5 @@
 
-Certainly! Below is an API endpoint document for the provided GraphQL schema. This document outlines the available queries and mutations for managing users using the `user_schema`.
+Below is an API endpoint document for the provided GraphQL schema. This document outlines the available queries and mutations for managing users using the `user_schema`.
 
 ## User Schema API Documentation
 
