@@ -1,6 +1,8 @@
 # ignore all the files end with the File extension names
 *.sqlite3
 
+.env
+
 # Visual Studio profiler
 *.psess
 *.vsp
