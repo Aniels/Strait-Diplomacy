@@ -18,7 +18,7 @@ jobs:
     # This sets the default working directory for all steps in this job
     defaults:
       run:
-        working-directory: backend  # Change this to your Django project directory
+        working-directory: .backend  # Change this to your Django project directory
 
     steps:
     - uses: actions/setup-python@v4
